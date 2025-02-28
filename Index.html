@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer Dashboard</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <header class="text-center mb-4">
+            <h1 class="display-4"><b>Pashu Vikas<b></h1>
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#farmer-dashboard">Listed Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Farmer Dashboard Section -->
+        <section id="farmer-dashboard">
+            <div class="mb-4">
+                <h2 class="text-center">Farmer Dashboard</h2>
+                <p class="text-center text-muted">Add your items to the marketplace below.</p>
+            </div>
+
+            <!-- Add Item Form -->
+            <div class="card p-4 shadow-sm">
+                <form id="add-item-form">
+                    <div class="form-group">
+                        <label for="item-name">Item Name</label>
+                        <input type="text" class="form-control" id="item-name" placeholder="Enter Item Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="item-description">Item Description</label>
+                        <textarea class="form-control" id="item-description" rows="3" placeholder="Enter Item Description" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="item-price">Item Price (₹)</label>
+                        <input type="number" class="form-control" id="item-price" placeholder="Enter Item Price" required>
+                    </div>
+
+                    <button type="submit" class="btn btn-success btn-block">Add Item</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-4 bg-light">
+        <p class="mb-0">&copy; 2025 Pashu Vikas. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
