@@ -35,6 +35,13 @@ body{
       background-color: #b1240b;
       color: #fff;
 }
+footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      font-size: 0.9rem;
+      }
 
 @keyframes uf-animation {
   0%   {top:0px;}
